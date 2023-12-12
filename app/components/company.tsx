@@ -17,8 +17,8 @@ export default async function Company() {
                         <div key={company.id} className="bg-[#4d4d4d] rounded-md pb-2">
                             <a href="/company.html">
                                 <div className="text-white text-center">
-                                    <h3>{company.brand}</h3>
-                                    <p>{company.model}</p>
+                                    <h3>{company.name}</h3>
+                                    <p>{company.number}</p>
                                 </div>
                             </a>
                         </div>

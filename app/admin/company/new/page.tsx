@@ -26,8 +26,8 @@ export default function NewCompanys({
         <div>
             <h1 className=" text-center text-4xl">Cadastrar novas empresas</h1>
             <form>
-                <Input type="text" name="brand" placeholder="Digite o nome da empresa"/><br/>
-                <Input type="text" name="model" placeholder="Digite o numero da empresa"/> <br/>
+                <Input type="text" name="name" placeholder="Digite o nome da empresa"/><br/>
+                <Input type="text" name="number" placeholder="Digite o numero da empresa"/> <br/>
                 <Button formAction={saveCompanys} className="text-white">Salvar</Button>
             </form>
         </div>

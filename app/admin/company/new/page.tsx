@@ -17,9 +17,9 @@ export default function NewCompanys({
 
     async function saveCompanys(formData: FormData){
         "use server"
-        const brand = formData.get("brand") as string;
-        const model = formData.get("model") as string;
-        await sql`INSERT INTO company (name, number) VALUES(${brand}, ${model})`
+        const name = formData.get("name") as string;
+        const number = formData.get("number") as string;
+        await sql`INSERT INTO company (name, number) VALUES(${name}, ${number})`
         console.log("Acessou a função")
     }
     return (
